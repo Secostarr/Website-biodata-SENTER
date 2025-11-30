@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bio Data Saya</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+  .section { min-height: 100vh; display: flex; align-items: center; }
+  .photo-box img { width: 100%; height: 380px; object-fit: cover; border-radius: 8px; }
+  .thumb { width: 60px; height: 60px; object-fit: cover; cursor: pointer; border-radius: 5px; }
+  .thumb.active { outline: 3px solid #0d6efd; }
+  .photo-box { position: sticky; top: 90px; }
+  @media(max-width:767px){ .photo-box{ position: relative; top:0; } }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Profile Saya</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#Hobi" class="nav-link">Hobi</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="section pt-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="text-center" style="background-color: black;">
+      <h1 id="" class="text-light"><strong>ALL ABOUT MEEEEEEEEE!!!</strong></h1>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="photo-box">
+          <img id="mainPhotoGanteng" src="images/orang_ganteng/orang_ganteng_1.jpg" class="shadow">
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="">
+            <h1 class="text-dark"><b>BINTANG KESUMA MAHARDIKA</b></h1>
+            <h5 class="text-muted"><b>Alamat : <h5 class="text-info">Jl.Hargomulyo, Sekampung, Lampung Timur, Lampung</h5></b></h5>
+            <h5 class="text-muted"><b>Motto : <h5 class="text-warning">Jadilah Harapan Untuk Banyak Orang Yang Berharap</h5></b></h5>
+            <h5 class="text-muted"><b>Tempat - Tanggal Lahir : <h5 class="text-danger">Sekampung, 17/08/2006</h5></b></h5>
+            <h5 class="text-muted"><b>Asal Sekolah : <h5 class="text-success">SMK N 3 METRO</h5></b></h5>
+            <h5 class="text-muted"><b>Pesan Kan Kesan Selama Hidup : <h5 class="text-primary">SENG PENTENG WAREGGG</h5></b></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Hobi" class="section pt-5">
+  <div class="container">
+    <div class="text-center mb-3" style="background-color: black;">
+      <h1 class="text-light"><strong>ALL IS MY HOBIII!!!</strong></h1>
+    </div>
+
+    <!-- NAV TABS -->
+    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="motor-tab" data-bs-toggle="tab" data-bs-target="#motor" type="button" role="tab" aria-controls="motor" aria-selected="true">Motor</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="game-tab" data-bs-toggle="tab" data-bs-target="#game" type="button" role="tab" aria-controls="game" aria-selected="false">Game</button>
+      </li>
+    </ul>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content" id="myTabContent">
+      <!-- MOTOR -->
+      <div class="tab-pane fade show active" id="motor" role="tabpanel" aria-labelledby="motor-tab">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h2><strong>MOTOR</strong></h2>
+            <div class="photo-box">
+              <!-- gunakan satu video dengan id unik -->
+              <video id="videoMotor" class="shadow w-100" controls autoplay muted playsinline>
+                <source src="images/hobi/hobi_motor_2.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+              </video>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <h2><strong>Deskripsi Tentang Hobi Motor</strong>r</h2>
+            <p class="text-muted">Saya mengenal hobi ini ketika saya masih duduk di bangku SMK ketika itu saya sedang scroll tiktok dan sering lewat
+              cinematic motor yang saya lihat lama lama saya suka dan saya ikut membuatnya
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GAME -->
+      <div class="tab-pane fade" id="game" role="tabpanel" aria-labelledby="game-tab">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h2><strong>GAME</strong></h2>
+            <div class="photo-box">
+              <!-- gunakan satu video dengan id unik -->
+              <video id="videoGame" class="shadow w-100" controls autoplay muted playsinline>
+                <source src="images/hobi/valo1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+              </video>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <h2><strong>Deskripsi Tentang Hobi Game</strong>r</h2>
+            <p class="text-muted">
+              hobi yang paling lama saya punya karena hobi ini dari saya TK dulu awal mulanya saya hanya bermain game COC atau clash of clans pada saat saya TK lalu
+              berlanjut sampai sekarang
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="contact" class="section pt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="text-center" style="background-color: black;">
+      <h1 id="" class="text-light"><strong>CONTACT</strong></h1>
+      </div>
+
+      <!-- Nomor Telepon -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <i class="fa-solid bi bi-whatsapp fa-2x text-primary mb-3"></i>
+          <h5 class="mb-2">Telepon/WhatsApp</h5>
+          <p class="mb-0">+62 815-3932-3818</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <i class="fa-solid fa-envelope fa-2x text-danger mb-3"></i>
+          <h5 class="mb-2">Email</h5>
+          <p class="mb-0">bintangdika676@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <i class="fa-brands fa-instagram fa-2x text-warning mb-3"></i>
+          <h5 class="mb-2">Instagram</h5>
+          <p class="mb-0">@bintang_kesumaa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+    let fotoIndex = 0;
+
+    const daftarFoto = [
+        "images/orang_ganteng/orang_ganteng_1.jpg",
+        "images/orang_ganteng/orang_ganteng_2.jpg",
+        "images/orang_ganteng/orang_ganteng_3.jpg"
+    ];
+
+    setInterval(() => {
+        fotoIndex++;
+        if (fotoIndex >= daftarFoto.length) {
+            fotoIndex = 0;
+        }
+        document.getElementById("mainPhotoGanteng").src = daftarFoto[fotoIndex];
+    }, 2000);
+
+    // Daftar video untuk diputar bergantian
+    const listVideoMotor = [
+        "images/hobi/hobi_motor_2.mp4",
+        "images/hobi/hobi_motor_3.mp4",
+        "images/hobi/hobi_motor_4.mp4",
+        "images/hobi/hobi_motor_5.mp4"
+    ];
+
+    let currentMotor = 0;
+
+    const motorPlayer = document.getElementById("videoMotor");
+
+    // Atur video pertama
+    motorPlayer.src = listVideoMotor[currentMotor];
+
+    // Event: saat video selesai → ganti video
+    motorPlayer.addEventListener("ended", () => {
+
+        currentMotor++;
+
+        // Jika sudah sampai video terakhir, ulang ke awal
+        if (currentMotor >= listVideoMotor.length) {
+            currentMotor = 0;
+        }
+
+        // Ganti sumber video
+        motorPlayer.src = listVideoMotor[currentMotor];
+
+        // Pastikan tetap autoplay video berikutnya
+        video.muted = false;
+        motorPlayer.play();
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const listVideoGame = [
+        "images/hobi/valo1.mp4",
+        "images/hobi/pubg1.mp4",
+        "images/hobi/pubg2.mp4"
+    ];
+
+    let currentGame = 0;
+    const gamePlayer = document.getElementById("videoGame");
+
+    document.getElementById("game-tab").addEventListener("shown.bs.tab", function () {
+
+        // Set video pertama
+        gamePlayer.src = listVideoGame[currentGame];
+
+        // Agar autoplay jalan di semua browser
+        gamePlayer.muted = true; 
+        gamePlayer.autoplay = true;
+
+        // Play manual (kadang Chrome butuh trigger JS)
+        gamePlayer.play().catch((e) => {
+            console.warn("Autoplay diblokir:", e);
+        });
+
+    });
+
+    gamePlayer.addEventListener("ended", function () {
+
+        currentGame++;
+
+        // jika index habis, ulang
+        if (currentGame >= listVideoGame.length) {
+            currentGame = 0;
+        }
+
+        gamePlayer.src = listVideoGame[currentGame];
+        gamePlayer.play();
+    });
+
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
